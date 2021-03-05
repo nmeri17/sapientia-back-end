@@ -1,0 +1,213 @@
+// Receipt css
+
+
+div.receipt-center {
+    background-color: $white;
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+
+    div.header-receipt {
+        display: flex;
+        align-items: center;
+    }
+
+    div.left-print {
+        display: flex;
+        margin-right: auto;
+        align-content: center;
+        align-items: center;
+
+        div.kgelogo {
+            img {
+                height: 72px;
+                margin-right: 16px;
+            }
+        }
+
+        div.waybill-info {
+
+            p:nth-child(1),
+            p.small-date {
+                font-size: 14px;
+                font-weight: bold;
+                color: $Gray;
+            }
+
+            p:nth-child(2) {
+                font-size: 21px;
+                font-weight: bold;
+                color: $black;
+            }
+        }
+    }
+
+    div.right-print {
+        p.small-date {
+            font-size: 14px;
+            font-weight: bold;
+            color: $Gray;
+        }
+
+        p:nth-child(2) {
+            font-size: 16px;
+            font-weight: bold;
+            color: $black;
+        }
+    }
+
+
+}
+
+
+div.second-section {
+    margin-bottom: 16px;
+    display: flex;
+    margin-top: 24px;
+
+
+    div.detail-info2 {
+        display: flex;
+    
+        p.weight, p.qty-font {
+            font: 14px;
+            color: $black;
+            font-weight: bold;
+        }
+    
+        p.weight-detail, p.qty-num {
+            font: 14px;
+            color: $Gray;
+            font-weight: 500;
+        }
+    
+        div.weight-info {
+            margin-right: 44px;
+    
+            
+        }
+    
+    
+    }
+    
+    div.detail-info {
+        margin-bottom: 16px;
+        
+        p.from, p.to {
+            font-size: 14px;
+            color: $Gray;
+            font-weight: bold;
+        }
+
+        p.sndr-name {
+            font-size: 16px;
+            color: $black;
+            font-weight: bold;
+        }
+
+        p.sndr-phone, p.rcevr-phone {
+            font-size: 16px;
+            color: $black;
+            font-weight: bold;
+            margin-right: 16px;
+        }
+        
+
+        div.numb-location {
+            display: flex;
+
+            p.sndr-city {
+                font-size: 16px;
+                color: $Gray;
+                font-weight: bold;
+            }
+        }
+
+        p.rcevr-name {
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        p.rcevr-address {
+            font-size: 14px;
+            color: $Gray;
+            font-weight: 500;
+        }  
+        
+    }
+
+    div.item-details {
+        margin-bottom: 16px;
+    }
+
+    p.desc {
+        font-size: 14px;
+        color: $Gray;
+        font-weight: 500;
+    }
+
+    div.rightpart {
+       img {
+           height: 108px;
+       } 
+    }
+
+}
+
+
+
+
+
+
+
+
+div.signature-code {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    
+    img {
+        padding: 2px;
+        border: 1px solid $Gray;
+        height: 90px;
+        border-radius: 4px;
+    }
+    
+    div.sig {
+        display: flex;
+        padding: 8px;
+        align-items: baseline;
+        justify-content: baseline;
+        border: 1px solid $Gray;
+        width: 281px;
+        height: 90px;
+        border-radius: 4px;
+
+        p {
+            color: $lighter-gray;
+            padding-top: 55px;
+        }
+    }
+
+}
+
+
+div.closeup {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+@media print {
+
+
+
+div.closeup {
+    display: none;
+}
+}
