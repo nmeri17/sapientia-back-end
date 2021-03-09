@@ -2,13 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\{Str, Arr};
-
 use App\Models\Events;
 
 use Illuminate\Http\Request;
-
-use Illuminate\Support\Facades\DB;
 
 class EventsController extends Controller {
 
@@ -17,7 +13,10 @@ class EventsController extends Controller {
 
     public function index() {
 
-        return Events::all();
+        return response()->json([
+
+            "data" => Events::all()
+        ]);
     }
 
     public function create(Request $request) {
