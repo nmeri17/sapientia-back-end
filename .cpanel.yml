@@ -1,0 +1,5 @@
+---
+deployment:
+	tasks:
+    - export DEPLOYPATH=/home/sapienti/public_html/appx
+    - /bin/cp * $DEPLOYPATH
