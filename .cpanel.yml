@@ -1,5 +1,5 @@
 ---
 deployment:
 	tasks:
-    - export DEPLOYPATH=/home/sapienti/public_html/appx
+    - export DEPLOYPATH=/home2/sapienti/public_html/appx
     - /bin/cp index.php $DEPLOYPATH
