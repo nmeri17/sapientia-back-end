@@ -27,7 +27,7 @@ class EventsController extends Controller {
     public function store(Request $request) {
 
         $this->validate($request, [
-            'name' => 'required|unique|min:8',
+            'name' => 'required|unique:events|min:8',
             'event_date' => 'required|date',
             'location' => 'required|min:8',
         ]);
